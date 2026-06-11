@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studio Sentinel — Support</title>
+  <meta name="description" content="Support and help for Studio Sentinel, the iPhone and iPad app for monitoring your Mac Studio or Mac mini running AI workloads.">
+  <style>
+    :root { --bg:#0f1115; --card:#171a21; --line:#262b36; --text:#e7ebf2; --muted:#9aa3b2; --accent:#34c759; }
+    * { box-sizing: border-box; }
+    body { margin:0; font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--text); }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+    header { display:flex; align-items:center; gap:16px; margin-bottom: 8px; }
+    .logo { width:56px; height:56px; border-radius:13px; background:var(--card); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; font-size:30px; }
+    h1 { font-size: 1.7rem; margin: 0; }
+    .tagline { color: var(--muted); margin: 4px 0 32px; }
+    h2 { font-size: 1.15rem; margin: 36px 0 12px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px 22px; margin: 14px 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .btn { display:inline-block; background:var(--accent); color:#04210f; font-weight:600; padding:12px 20px; border-radius:12px; margin-top:6px; }
+    .btn:hover { text-decoration:none; opacity:.92; }
+    details { border-bottom:1px solid var(--line); padding:14px 0; }
+    details:last-child { border-bottom:none; }
+    summary { cursor:pointer; font-weight:600; }
+    summary::-webkit-details-marker { color: var(--accent); }
+    details p { color: var(--muted); margin:10px 0 0; }
+    footer { color:var(--muted); font-size:.85rem; margin-top:48px; border-top:1px solid var(--line); padding-top:20px; }
+    code { background:#0b0d11; border:1px solid var(--line); padding:1px 6px; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">🖥️</div>
+      <div>
+        <h1>Studio Sentinel — Support</h1>
+        <div class="tagline">Monitor your Mac Studio or Mac mini AI workstation from your iPhone or iPad.</div>
+      </div>
+    </header>
+
+    <h2>Contact us</h2>
+    <div class="card">
+      <p>Questions, bug reports, or feature requests? We're happy to help and typically reply within 1 business day.</p>
+      <p><strong>Email:</strong> <a href="mailto:tito.morales@govmedai.com?subject=Studio%20Sentinel%20Support">tito.morales@govmedai.com</a></p>
+      <a class="btn" href="mailto:tito.morales@govmedai.com?subject=Studio%20Sentinel%20Support">Email Support</a>
+    </div>
+
+    <h2>Getting started</h2>
+    <div class="card">
+      <p>Studio Sentinel has two parts: a small <strong>macOS agent</strong> that runs on the Mac you want to monitor, and this <strong>iPhone/iPad app</strong> that connects to it over your local network.</p>
+      <ol>
+        <li>Install and launch the macOS agent on your Mac Studio or Mac mini.</li>
+        <li>Make sure your iPhone/iPad and the Mac are on the <strong>same Wi-Fi or Ethernet network</strong>.</li>
+        <li>Open Studio Sentinel — your Mac is discovered automatically. Tap it, then tap <strong>Pair</strong>.</li>
+      </ol>
+      <p>Want to try it without a Mac first? On the welcome screen tap <strong>Try Demo</strong> to explore every screen with simulated data.</p>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="card">
+      <details open>
+        <summary>The app can't find my Mac.</summary>
+        <p>Confirm the macOS agent is running, that both devices are on the same network, and that you allowed Studio Sentinel's <em>Local Network</em> permission (iOS Settings → Studio Sentinel → Local Network). Corporate/guest Wi-Fi that blocks device-to-device traffic can prevent discovery.</p>
+      </details>
+      <details>
+        <summary>What does Studio Sentinel Pro include?</summary>
+        <p>Pro is a one-time purchase that unlocks the AI Monitor, Charts, Process Monitor, and Alerts. It includes Family Sharing — no subscription.</p>
+      </details>
+      <details>
+        <summary>How do I restore my purchase on a new device?</summary>
+        <p>Open <strong>Settings</strong> inside the app, tap <strong>Unlock Studio Sentinel Pro</strong>, then tap <strong>Restore Purchase</strong>. Your purchase is tied to your Apple ID.</p>
+      </details>
+      <details>
+        <summary>Why is GPU utilization shown as an estimate?</summary>
+        <p>Apple does not provide a public API for real-time GPU utilization on Apple Silicon. Studio Sentinel uses Metal device info and unified-memory pressure as a proxy, and labels these values as estimated.</p>
+      </details>
+      <details>
+        <summary>Is my data private?</summary>
+        <p>Yes. All monitoring happens directly between your devices on your local network — no metrics are sent to us or any third party. See our <a href="docs/privacy.html">Privacy Policy</a>.</p>
+      </details>
+    </div>
+
+    <footer>
+      <p>Studio Sentinel · <a href="docs/privacy.html">Privacy Policy</a> · <a href="mailto:tito.morales@govmedai.com?subject=Studio%20Sentinel%20Support">Contact</a></p>
+    </footer>
+  </div>
+</body>
+</html>
